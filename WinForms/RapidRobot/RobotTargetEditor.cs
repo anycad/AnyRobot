@@ -11,6 +11,7 @@ namespace Rapid.Robot
             : base(target, TransformWidget.Create(20), "Robot.MoveTarget")
         {
 
+            SetWidgetCenter(0);
             mRobotArm = arm;
 
             mSolver = IkSolverFactory.Instance().Create("LMA");

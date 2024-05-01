@@ -102,7 +102,7 @@ namespace RapidRobot
         private void timer1_Tick(object sender, EventArgs e)
         {
             uint armIdx = (uint)comboBox1.SelectedIndex;
-            var v = mRobot.AddVariable(armIdx, mButtonIndex + 1, mMoveSign * (double)numericUpDownSpeed.Value);
+            var v = mRobot.AddVariable(armIdx, mButtonIndex, mMoveSign * (double)numericUpDownSpeed.Value);
             UpdateAll();
         }
 
